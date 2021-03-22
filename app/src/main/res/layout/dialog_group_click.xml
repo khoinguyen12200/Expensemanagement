@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_swipe_left"
+        android:layout_margin="10dp"/>
+    <ImageView
+        android:id="@+id/history"
+        android:elevation="5dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/circle_green"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_history_white"
+        android:padding="15dp"/>
+    <ImageView
+        android:id="@+id/edit"
+        android:elevation="5dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/circle_blue"
+        android:backgroundTint="@color/dark_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_edit_white"
+        android:padding="15dp"/>
+    <ImageView
+        android:id="@+id/add"
+        android:elevation="5dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/circle_blue"
+        android:backgroundTint="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_shopping_add_white"
+        android:padding="15dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_swipe_right"
+        android:layout_margin="10dp"/>
+
+
+</LinearLayout>

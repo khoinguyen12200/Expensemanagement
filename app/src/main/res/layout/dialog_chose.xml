@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="250dp">
+    <TextView
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/muc_thong_ke_chi_tieu"/>
+    <RadioGroup
+        android:weightSum="2"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <RadioButton
+            android:layout_margin="5dp"
+            android:id="@+id/tuan"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/theo_tuan"/>
+        <RadioButton
+            android:layout_margin="5dp"
+            android:id="@+id/thang"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/theo_thang"/>
+    </RadioGroup>
+
+</LinearLayout>

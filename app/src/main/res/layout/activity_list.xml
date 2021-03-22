@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_List_Expense">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:elevation="10dp"
+        android:paddingHorizontal="5dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white"
+        android:weightSum="20"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/bar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tong_hom_nay"/>
+        <TextView
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/title"
+            android:textColor="@color/black"
+            android:drawableTint="@color/black"
+            android:gravity="center"
+            android:drawableRight="@drawable/ic_money_black_2"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:id="@+id/tong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"/>
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:drawableTint="@color/black"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            android:drawableRight="@drawable/icon_baseline_arrow_drop_down_24"
+            android:drawableLeft="@drawable/icon_calendar_black"
+            android:drawablePadding="10dp"
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:text="@string/chon_thoi_gian"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+
+        android:requiresFadingEdge="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp">
+
+            <LinearLayout
+                android:paddingBottom="50dp"
+                android:id="@+id/list"
+                android:layoutAnimation="@anim/layout_animation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add"
+        android:src="@drawable/icon_shopping_add_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

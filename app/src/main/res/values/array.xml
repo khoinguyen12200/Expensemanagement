@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="color_list">
+        <item>@color/lite_sky</item>
+        <item>@color/lite_blue</item>
+        <item>@color/lite_green</item>
+        <item>@color/lite_pur</item>
+        <item>@color/lite_yellow</item>
+        <item>@color/lite_orange</item>
+        <item>@color/lite_pink</item>
+        <item>@color/lite_red</item>
+        <item>@color/white</item>
+    </integer-array>
+</resources>

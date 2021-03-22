@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/icon_shopping_add_white"
+        android:iconTint="@color/colorPrimaryDark"
+        android:title="@string/them_chi_tieu"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/icon_history_white"
+        android:iconTint="@color/blue"
+        android:title="@string/xem_lich_su"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/icon_edit_white"
+        android:iconTint="@color/dark_red"
+        android:title="@string/chinh_sua_nhom"
+        app:showAsAction="always" />
+</menu>
